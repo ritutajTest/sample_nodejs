@@ -18,4 +18,5 @@ integrations:
       recipients:
         - "#mybuilds"
       on_start: always
-      on_success: always
+      on_success: never
+      on_change: always
