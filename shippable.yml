@@ -21,3 +21,11 @@ integrations:
       on_success: change
       on_failure: change
       
+    - integrationName: irc   
+      type: irc
+      recipients:
+        - "chat.freenode.net#mybuilds"
+      on_start: always
+      on_success: always      
+      on_failure: always
+      
