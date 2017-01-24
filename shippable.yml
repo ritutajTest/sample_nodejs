@@ -24,8 +24,8 @@ integrations:
     - integrationName: irc   
       type: irc
       recipients:
-        - abs:
-            - "chat.freenode.net#mybuildsrr123"
+        - "chat.freenode.net#mybuildsrr123"
+        - "chat.freenode.net#mybuilds"
       on_start: always
       on_success: always      
       on_failure: always
