@@ -13,14 +13,6 @@ build:
     - npm test
 integrations:
   notifications:
-    - integrationName: Myslack
-      type: slack
-      recipients:
-        - "#mybuilds"
-      on_start: always
-      on_success: change
-      on_failure: change
-      
     - integrationName: irc   
       type: irc
       recipients: chat.freenode.net#mybuildsrr123
