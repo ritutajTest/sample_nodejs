@@ -6,6 +6,8 @@ node_js:
 
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
+  - foo=bar
+  - foo1=bar1
 
 build:
   pre_ci:
