@@ -11,6 +11,7 @@ env:
     - foo1=bar1
 
 build:
+  cache: true
   pre_ci:
     - echo "this is pr-ci"
   ci:
