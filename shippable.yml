@@ -4,11 +4,11 @@ node_js:
   - 4.3.1
   - 5.0.0
 
-env:
-  global:
-    - XUNIT_FILE=shippable/testresults/result.xml
-    - foo=bar
-    - foo1=bar1
+#env:
+  #global:
+    #- XUNIT_FILE=shippable/testresults/result.xml
+    #- foo=bar
+    #- foo1=bar1
 
 build:
   cache: true
@@ -17,4 +17,5 @@ build:
   ci:
     - npm install
     - npm test
+    - printenv
       
