@@ -15,8 +15,7 @@ build:
   pre_ci:
     - echo "this is pr-ci"
   ci:
-    #- npm install
-    #- npm test
+    - echo "this is ci pulling private image from docker"
     - docker pull riturajcse/rituexm
     - printenv
     
