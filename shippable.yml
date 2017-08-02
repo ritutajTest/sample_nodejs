@@ -15,7 +15,13 @@ build:
   pre_ci:
     - echo "this is pr-ci"
   ci:
-    - npm install
-    - npm test
+    #- npm install
+    #- npm test
+    - docker pull riturajcse/rituexm
     - printenv
+    
+integrations:
+  hub:
+    - integrationName: dockerhub
+      type: docker
       
