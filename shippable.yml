@@ -4,11 +4,6 @@ language: node_js
   #- 4.3.1
   #- 5.0.0
 
-env:
-  global:
-    - - secure: CP3ifPcmrU45eJrTAT5WFwpemjY7efEiIty4lQhB52EGvVqDjjDGe4KajaB8yFzJk3lWblSpL0J2XF1ymqNB3WspugZdu7309zpG9xKj4og2m93WoA7Ci/boVNPFjIAQY6EJT7HcpTL7bq3+tCPK+ZNCy099LVg11+RLaooA0CGeh22yYyLQS+Q12uOOuRk98LrxL2FuwmtJLltOUi+6inWZKx3zJVyByvonUy3rVbMbpCmphFQLWRMMXS9lH94KMzOSrgJ2G5UM2cadd1NMomK8metuGLH3UtlJdGAchRTqDGeSqGIRvASluZTnaEJN8SY7b/+xnJ+uUEc0+uVtrw==
-    - foo=barthisiakjdsdbksksfkjsnfkjsfkjanfkjakjadkjabdakjdabdkabdkabdkjabdkjabdkjabdkjabdkjadkad
-    - foo1=bar1adjadjkahdkjahdkjahdkjahdjkahdkjahdskjhdkjahdsjakhdskjahdkjahdkjsahdjkahsdjkahskjdhakjdshakjhdakjhdkjahdkjahdkjahdkjahdkjahdkjadhkjahdkjadhakjhdkjahdkjadhkjad
 
 build:
   cache: true
@@ -16,11 +11,7 @@ build:
     - echo "this is pr-ci"
   ci:
     - echo "this is ci pulling private image from docker"
-    - docker pull riturajcse/rituexm
+    #- docker pull riturajcse/rituexm
     - printenv
     
-integrations:
-  hub:
-    - integrationName: dockerhub
-      type: docker
       
